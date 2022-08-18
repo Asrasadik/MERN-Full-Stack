@@ -125,3 +125,5 @@ let module = {
 let newX = { x: 78 };
 let boundGetX = module.getX.bind(newX, "ID:");
 console.log(boundGetX()); // console.log(boundGetX("ID:"));
+
+//--------Arrow Functions-------------
