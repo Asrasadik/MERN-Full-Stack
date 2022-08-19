@@ -127,3 +127,5 @@ let boundGetX = module.getX.bind(newX, "ID:");
 console.log(boundGetX()); // console.log(boundGetX("ID:"));
 
 //--------Arrow Functions-------------
+let getId = _ => 123;
+getId();
