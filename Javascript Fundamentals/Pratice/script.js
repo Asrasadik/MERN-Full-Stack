@@ -129,3 +129,9 @@ console.log(boundGetX()); // console.log(boundGetX("ID:"));
 //--------Arrow Functions-------------
 let getId = _ => 123;
 getId();
+//--------Spread sysntax + Arrow function
+let cars = ( car1, car2, car3) => {
+    console.log(car1, car2, car3);}
+let c1 = 2;
+let c2 = [3,4];
+cars(...c2,c1);
