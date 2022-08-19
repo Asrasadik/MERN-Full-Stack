@@ -135,3 +135,10 @@ let cars = ( car1, car2, car3) => {
 let c1 = 2;
 let c2 = [3,4];
 cars(...c2,c1);
+
+//--------Default Parameters------------
+let trackerID = (carID, city = 'NY') => {
+console.log(`Tracking ${carID} in ${city}`);
+}
+trackerID(123);
+trackerID(456, 'Canada');
