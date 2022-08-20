@@ -127,18 +127,19 @@ let boundGetX = module.getX.bind(newX, "ID:");
 console.log(boundGetX()); // console.log(boundGetX("ID:"));
 
 //--------Arrow Functions-------------
-let getId = _ => 123;
+let getId = (_) => 123;
 getId();
 //--------Spread sysntax + Arrow function
-let cars = ( car1, car2, car3) => {
-    console.log(car1, car2, car3);}
+let cars1 = (car1, car2, car3) => {
+  console.log(car1, car2, car3);
+};
 let c1 = 2;
-let c2 = [3,4];
-cars(...c2,c1);
+let c2 = [3, 4];
+cars1(...c2, c1);
 
 //--------Default Parameters------------
-let trackerID = (carID, city = 'NY') => {
-console.log(`Tracking ${carID} in ${city}`);
-}
+let trackerID = (carID, city = "NY") => {
+  console.log(`Tracking ${carID} in ${city}`);
+};
 trackerID(123);
-trackerID(456, 'Canada');
+trackerID(456, "Canada");
