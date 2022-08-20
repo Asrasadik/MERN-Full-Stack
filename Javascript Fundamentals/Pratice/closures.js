@@ -1,5 +1,7 @@
 console.log('"Closures"');
 
+//---------------------------------------------------------------------
+
 function Car(id) {
   let idCar = id;
   let start = function () {

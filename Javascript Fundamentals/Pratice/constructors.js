@@ -1,5 +1,5 @@
 console.log('"Objects and Arrays"');
-/*
+
 //-----------Constructor--------------------
 let Car = function (id) {
   let carId = id;
@@ -37,7 +37,7 @@ function Carlet(id) {
 }
 let carnum3 = new Carlet(113);
 console.log(carnum3.carId);
-*/
+
 //--------------Constructor+Method------
 function CarMethod(id) {
   this.carId = id;
