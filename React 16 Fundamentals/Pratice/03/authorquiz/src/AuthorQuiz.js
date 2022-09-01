@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import "./bootstrap.min.css";
 
@@ -13,8 +13,19 @@ function Hero() {
   );
 }
 
-function Turn() {
-  return <div />;
+function Turn(turnData) {
+  return (
+    <div className="row turn" style={{ background: "white" }}>
+      <div className="clo-4 offset-1">
+        <img className="authorimage" alt="Author" />
+      </div>
+      <div className="col-6">
+        {turnData.turnData.books.map((title) => (
+          <p>{title}</p>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 function Continue() {
@@ -26,25 +37,23 @@ function Footer() {
     <div id="footer" className="row">
       <div className="col-12">
         <p className="text-muted-credit">
-          All images are from <a href="#">Wikimedia Commons</a> and are in
-          public domain
+          All images are from <a href="">Wikimedia Commons</a> and are in public
+          domain
         </p>
       </div>
     </div>
   );
 }
 
-class AuthorQuiz extends Component {
-  render() {
-    return (
-      <div className="container-fluid">
-        <Hero />
-        <Turn />
-        <Continue />
-        <Footer />
-      </div>
-    );
-  }
+function AuthorQuiz(turnData) {
+  return (
+    <div className="container-fluid">
+      <Hero />
+      <Turn {...turnData} />
+      <Continue />
+      <Footer />
+    </div>
+  );
 }
 
 export default AuthorQuiz;
