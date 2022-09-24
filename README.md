@@ -1,5 +1,11 @@
 # MERN-Full-Stack
 ## Links: <br/>
+### CodePen Examples: <br/>
+| Title         | Link          |
+| ------------- | ------------- |
+| Passing Data in React  | https://codepen.io/asrasadik/pen/yLKdPva  |
+| ClickCounter-State  | https://codepen.io/asrasadik/pen/RwMzjoY  |
+
 Node js: <br/>
 - https://jscomplete.com/learn/why-node-for-react
 - https://www.freecodecamp.org/news/hard-coding-concepts-explained-with-simple-real-life-analogies-280635e98e37/
